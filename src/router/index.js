@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import LoginView from '../views/LoginView.vue'
 import RegisterView from '../views/RegisterView.vue'
 import DashboardView from '../views/DashboardView.vue'
@@ -9,7 +9,7 @@ import AuthLayout from '../layout/AuthLayout.vue' // 👈 le layout avec la navb
 import { useAuthStore } from '../stores/useAuthStore'
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     // 🔓 Routes publiques
     {
